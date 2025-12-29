@@ -55,19 +55,19 @@ const companyData = {
 clients: [
 {
   name: "Pt. Poliplant sejahtera (Cargill grup) Kec. Air upas, Kalbar",
-  logo: "assets/images/client/cargill.png",
+  logo: "assets/images/client/cargill.webp",
 },
   {
     name: "Mall Sumarecon Serpong",
-    logo: "assets/images/client/sumarecon-serpong.png",
+    logo: "assets/images/client/sumarecon-serpong.webp",
   },
   {
     name: "Mall Sumarecon Kelapagading",
-    logo: "assets/images/client/sumarecon-gading.png",
+    logo: "assets/images/client/sumarecon-gading.webp",
   },
   {
     name: "Sekolah Islam Al-Azhar Sumarecon Bekasi",
-    logo: "assets/images/client/al-azhar-bekasi.png",
+    logo: "assets/images/client/al-azhar-bekasi.webp",
   },
 ],
 

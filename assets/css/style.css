@@ -1,0 +1,147 @@
+:root {
+  --primary: #1f2937;
+  --accent: #f59e0b;
+}
+
+/* WhatsApp Floating Button */
+#wa-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+}
+
+#wa-float img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0,0,0,.3);
+  transition: .3s ease;
+}
+
+#wa-float img:hover {
+  transform: scale(1.1);
+}
+
+/* BODY */
+
+body {
+   padding-top: 70px;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.7;
+  color: #1f2937;
+}
+
+/* SECTION */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* HERO */
+.hero-section {
+  /* Lambang Perusahaan di tengah */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url('../images/hero/civil1.png') center/cover no-repeat;
+}
+
+.hero-section h1 {
+  letter-spacing: -0.5px;
+}
+
+.hero-section h1,
+.hero-section p {
+  color: #ffffff;
+}
+
+
+/* Hero Logo Animation */
+.hero-section img {
+  animation: fadeInDown .8s ease;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* BUTTON */
+.btn-warning {
+  background-color: #f59e0b;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #d97706;
+}
+
+/* CARD */
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 30px rgba(0,0,0,.08);
+}
+
+
+/* CLIENT LOGOS */
+.client-logo {
+  max-width: 150px;
+  max-height: 90px;
+  width: 100%;
+  object-fit: contain;
+
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: .3s ease;
+}
+
+.client-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+
+/* PROJECT IMAGE */
+.project-img {
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* FOOTER */
+footer {
+  font-size: 14px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all .8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}

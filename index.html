@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <title>Company Profile Kontraktor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+
+    <!-- Custom Style -->
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+  <!-- WhatsApp Floating Button -->
+  <a id="wa-float" target="_blank" rel="noopener">
+    <img src="assets/images/wa_1.jpg" alt="WhatsApp">
+  </a>
+
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background:#1f2937;">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+          PT. Wadah Karya Persada
+        </a>
+
+        <button class="navbar-toggler" type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Layanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#clients">Klien & Pengalaman Kami
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Proyek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Hero -->
+    <section class="hero-section d-flex align-items-center">
+      <div class="container text-center text-white">
+        <img src="assets/images/logo/WKP.png" alt="Logo Perusahaan"
+          style="width:300px; height:auto; margin-bottom:20px;">
+        <h1 id="hero-title" class="fw-bold display-5"></h1>
+        <p id="hero-tagline" class="lead mt-3"></p>
+        <a id="hero-cta" href="#contact"
+          class="btn btn-warning btn-lg mt-4">
+          Hubungi Kami
+        </a>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="fw-bold mb-3">Tentang Kami</h2>
+            <p id="about-desc"></p>
+          </div>
+          <div class="col-md-6">
+            <img src="assets/images/about/about.jpg" alt="Tentang Kami"
+              class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layanan -->
+    <section id="services" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Layanan Kami</h2>
+          <p class="text-muted">Beberapa layanan utama yang kami kerjakan</p>
+        </div>
+
+        <div class="row g-4" id="services-list"></div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-5">
+
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Mengapa Memilih Kami?</h2>
+          <p class="text-muted">Keunggulan yang kami tawarkan</p>
+          <div class="row text-center g-4" id="strengths-list"></div>
+        </div>
+      </section>
+
+      <!-- Clients -->
+      <section id="clients" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Klien & Pengalaman Kami</h2>
+      <p class="text-muted">
+        Beberapa klien besar dan pengalaman proyek yang telah kami tangani
+      </p>
+    </div>
+
+    <!-- Logo Klien Besar -->
+    <div class="row justify-content-center align-items-center g-4 mb-4"
+         id="clients-list"></div>
+
+    <!-- Pengalaman Umum -->
+    <div class="row justify-content-center mt-4">
+      <div class="col-md-8">
+        <ul class="list-group list-group-flush text-center"
+            id="experience-list"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+      <!-- End Clients -->
+
+      <!-- Project Gallery -->
+      <section id="projects" class="py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="fw-bold">Proyek Kami</h2>
+            <p class="text-muted">Beberapa proyek yang telah kami kerjakan</p>
+          </div>
+
+          <div class="row g-4" id="projects-list"></div>
+        </div>
+      </section>
+      <!-- End Project Gallery -->
+
+      <!-- Call To Action -->
+      <section class="py-5 text-center text-white"
+        style="background:#1f2937;">
+        <div class="container">
+          <h2 class="fw-bold mb-3">Siap Mengerjakan Proyek Anda?</h2>
+          <p class="mb-4">
+            Hubungi kami untuk konsultasi dan penawaran terbaik.
+          </p>
+          <a href="#contact" class="btn btn-warning btn-lg">
+            Konsultasi Sekarang
+          </a>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="fw-bold">Kontak Kami</h2>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+              <p id="contact-address"></p>
+              <p id="contact-phone"></p>
+              <p id="contact-email"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="py-3 bg-dark text-white text-center">
+        <small>
+          © 2025 PT. Wadah Karya Persada. All rights reserved.
+        </small>
+      </footer>
+
+      <!-- Bootstrap JS -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="data/content.js"></script>
+      <script src="assets/js/main.js"></script>
+    </body>
+  </html>

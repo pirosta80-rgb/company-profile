@@ -89,7 +89,7 @@ experience: [
     },
     {
       title: "Perbaikan Rumah / Renovasi",
-      location: "",
+      location: "Bekasi",
       year: "",
       image: "assets/images/projects/renovrumah.webp",
     },
@@ -106,14 +106,14 @@ experience: [
       image: "assets/images/projects/warehouse.webp",
     },
     {
-      title: "Pembangunan Jalan Raya",
-      location: "",
+      title: "Pembangunan Gedung Sekolah",
+      location: "Bekasi",
       year: "",
-      image: "assets/images/projects/jalanraya.webp",
+      image: "assets/images/projects/sd-al-azhar.webp",
     },
     {
       title: "Pembangunan Rumah Baru",
-      location: "",
+      location: "Bekasi",
       year: "",
       image: "assets/images/projects/rumahbaru.webp",
     },

@@ -82,8 +82,8 @@ experience: [
 
   projects: [
     {
-      title: "Pembangunan Gedung Farmasi",
-      location: "",
+      title: "Pembangunan Gedung Steril (Steril Room)",
+      location: "Marunda",
       year: "",
       image: "assets/images/projects/farmasi.webp",
     },
@@ -95,18 +95,18 @@ experience: [
     },
     {
       title: "Pekerjaan Mekanikal / Piping",
-      location: "",
+      location: "Kalsel",
       year: "",
       image: "assets/images/projects/piping.webp",
     },
     {
       title: "Pembangunan Warehouse",
-      location: "",
+      location: "Serang",
       year: "",
       image: "assets/images/projects/warehouse.webp",
     },
     {
-      title: "Pembangunan Gedung Sekolah",
+      title: "Pembangunan/Renovasi Gedung Sekolah",
       location: "Bekasi",
       year: "",
       image: "assets/images/projects/sd-al-azhar.webp",

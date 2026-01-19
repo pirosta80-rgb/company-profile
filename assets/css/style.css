@@ -23,6 +23,26 @@
   transform: scale(1.1);
 }
 
+/* Email Floating Button */
+#email-float {
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  z-index: 9999;
+}
+
+#email-float img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0,0,0,.3);
+  transition: .3s ease;
+}
+
+#email-float img:hover {
+  transform: scale(1.1);
+}
+
 /* BODY */
 
 body {
@@ -49,7 +69,7 @@ section {
 
   min-height: 100vh;
   background:
-    linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    linear-gradient(rgba(75, 74, 74, 0.6), rgba(51, 49, 49, 0.6)),
     url('../images/hero/hero-2.webp') center/cover no-repeat;
 }
 

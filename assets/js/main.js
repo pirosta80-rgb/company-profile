@@ -102,3 +102,10 @@ if (companyData.company.whatsapp) {
 else {
   waButton.style.display = "none";
 } 
+
+// Email floating Button
+
+const emailButton = document.getElementById("email-float");
+if (companyData.company.email) {
+  emailButton.href = "mailto:" + companyData.company.email;
+}

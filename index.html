@@ -11,158 +11,35 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <style>
-    :root {
-      --primary-slate: #0f172a;   /* Warna utama gelap elegan */
-      --secondary-slate: #1e293b; /* Warna sekunder */
-      --accent-amber: #d97706;    /* Warna aksen konstruksi/emas */
-      --bg-light: #f8fafc;        /* Background abu-abu super terang */
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      color: #334155;
-      background-color: #ffffff;
-    }
-
-    h1, h2, h3, h4, h5, .navbar-brand {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-    }
-
-    /* --- GLOBAL COMPONENT STYLING --- */
-    section {
-      padding: 100px 0; /* Jarak antar bagian lebih lega & bernapas */
-    }
-
-    .section-badge {
-      display: inline-block;
-      color: var(--accent-amber);
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-bottom: 12px;
-    }
-
-    .section-title {
-      color: var(--primary-slate);
-      position: relative;
-      margin-bottom: 20px;
-    }
-
-    /* Custom Premium Button */
-    .btn-lux {
-      background-color: var(--accent-amber);
-      color: #ffffff !important;
-      font-weight: 600;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      padding: 14px 32px;
-      border-radius: 4px;
-      border: none;
-      transition: all 0.3s ease;
-    }
-
-    .btn-lux:hover {
-      background-color: #b45309;
-      transform: translateY(-2px);
-      box-shadow: 0 10px 20px rgba(217, 119, 6, 0.2);
-    }
-
-    /* --- FLOATING ACTION BUTTONS --- */
-    .fixed-actions {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      z-index: 1050;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .action-circle {
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-      transition: all 0.3s ease;
-    }
-
-    .action-circle:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 28px rgba(0,0,0,0.22);
-    }
-
-    .action-circle img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-
-    /* --- NAVIGATION --- */
-    .navbar {
-      background-color: rgba(15, 23, 42, 0.96) !important;
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-      padding: 20px 0;
-    }
-
-    .nav-link {
-      font-weight: 500;
-      font-size: 0.9rem;
-      letter-spacing: 0.5px;
-      margin: 0 10px;
-      transition: color 0.3s;
-    }
-
-    .nav-link:hover, .nav-link.active {
-      color: var(--accent-amber) !important;
-    }
-
-   /* --- HERO SECTION --- */
-.hero-area {
-  background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.85)), url('assets/images/hero/hero2.webp') no-repeat center center/cover;
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  text-align: center; /* <-- Sudah diperbaiki dari text-center menjadi text-align */
-  padding-top: 120px;
-}
-  </style>
 </head>
 <body>
 
-  <div class="fixed-actions">
-    <a id="email-float" class="action-circle" href="mailto:wadahkaryapersada.pt@yahoo.com?subject=Permintaan%20Penawaran%20Proyek&body=Halo%20PT%20Wadah%20Karya%20Persada" title="Kirim Email">
+  <div class="floating-actions">
+    <a id="email-float" class="action-item" href="#" title="Kirim Email Resmi">
       <img src="assets/images/mailicon.jpg" alt="Email">
     </a>
-    <a id="wa-float" class="action-circle" target="_blank" rel="noopener" title="Hubungi WhatsApp">
+    <a id="wa-float" class="action-item" target="_blank" rel="noopener" title="Hubungi WhatsApp">
       <img src="assets/images/wa_1.jpg" alt="WhatsApp">
     </a>
   </div>
 
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand text-uppercase tracking-wider fs-5" href="#">
-        <span style="color: var(--accent-amber);">PT.</span> Wadah Karya Persada
+      <a class="navbar-brand text-uppercase tracking-wider fs-6" href="#">
+        <span style="color: var(--amber-heavy);">PT.</span> Wadah Karya Persada
       </a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#premiumNavbar">
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#appNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="premiumNavbar">
+      <div class="collapse navbar-collapse" id="appNavbar">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">Tentang Kami</a></li>
           <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
-          <li class="nav-item"><a class="nav-link" href="#clients">Klien & Pengalaman</a></li>
+          <li class="nav-item"><a class="nav-link" href="#clients">Klien</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Proyek</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
         </ul>
@@ -170,42 +47,71 @@
     </div>
   </nav>
 
-  <section class="hero-area text-white">
-    <div class="container text-center">
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <img src="assets/images/logo/logo-nobg.png" alt="Logo Perusahaan" class="img-fluid mb-4" style="max-width: 240px; height: auto;">
-          <h1 id="hero-title" class="display-4 text-uppercase tracking-tight mb-3"></h1>
-          <p id="hero-tagline" class="lead text-white-50 max-w-2xl mx-auto mb-4" style="font-weight: 300;"></p>
-          <a id="hero-cta" href="#contact" class="btn btn-lux btn-lg mt-2">Hubungi Kami</a>
+  <section class="hero-box text-white">
+  <div class="container py-5">
+    <div class="row align-items-center g-5">
+      
+      <div class="col-lg-7 text-start animate-fade-in">
+        <span class="section-badge text-warning mb-2" style="letter-spacing: 3px;">Welcome to Corporate Profile</span>
+        <h1 id="hero-title" class="display-4 text-uppercase tracking-tight fw-extrabold mb-3" style="line-height: 1.1; font-weight: 800;">
+          </h1>
+        <p id="hero-tagline" class="lead text-white-50 mb-4 fs-5" style="font-weight: 300; max-width: 600px; line-height: 1.6;">
+          </p>
+        
+        <div class="d-flex flex-wrap gap-3 mb-5">
+          <a id="hero-cta" href="#contact" class="btn btn-custom btn-lg">Mulai Konsultasi</a>
+          <a href="#projects" class="btn btn-outline-light btn-lg px-4" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; border-radius: 4px;">Lihat Portofolio</a>
+        </div>
+
+        <div class="row g-4 pt-4 border-top border-white-10 d-none d-sm-flex">
+          <div class="col-4">
+            <h3 class="fw-bold text-warning mb-0 fs-2">50+</h3>
+            <small class="text-white-50 small tracking-wide text-uppercase" style="font-size: 11px;">Proyek Selesai</small>
+          </div>
+          <div class="col-4">
+            <h3 class="fw-bold text-warning mb-0 fs-2">100%</h3>
+            <small class="text-white-50 small tracking-wide text-uppercase" style="font-size: 11px;">Sesuai Spek</small>
+          </div>
+          <div class="col-4">
+            <h3 class="fw-bold text-warning mb-0 fs-2">Profesional</h3>
+            <small class="text-white-50 small tracking-wide text-uppercase" style="font-size: 11px;">Manajemen Ahli</small>
+          </div>
         </div>
       </div>
+
+      <div class="col-lg-5 text-center d-none d-lg-block animate-floating">
+        <div class="p-4 rounded-circle d-inline-block" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(5px); border: 1px solid rgba(255,255,255,0.05);">
+          <img src="assets/images/logo/logo-nobg.png" alt="PT WKP Logo" class="img-fluid" style="max-width: 280px; height: auto; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));">
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <section id="about">
     <div class="container">
-      <div class="row align-items-center g-5">
+      <div class="row align-items-center g-4 g-lg-5">
         <div class="col-lg-6">
-          <span class="section-badge">Kredibilitas Kami</span>
-          <h2 class="section-title display-6">Tentang Perusahaan</h2>
-          <p id="about-desc" class="text-secondary lh-lg mb-0"></p>
+          <span class="section-badge">Profil Korporasi</span>
+          <h2 class="section-title h1">Tentang Perusahaan</h2>
+          <p id="about-desc" class="text-secondary lh-lg mb-0" style="font-size: 0.95rem; text-align: justify;"></p>
         </div>
         <div class="col-lg-6">
-          <div class="position-relative ps-lg-4">
-            <img src="assets/images/about/about2.webp" alt="Tentang Kami" class="img-fluid rounded shadow-lg w-100">
+          <div class="position-relative">
+            <img src="assets/images/about/about2.webp" alt="Struktur Konstruksi WKP" class="img-fluid rounded shadow w-100">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="services" class="bg-light" style="background-color: var(--bg-light) !important;">
+  <section id="services" class="bg-surface">
     <div class="container">
-      <div class="text-center max-w-xl mx-auto mb-5">
-        <span class="section-badge">Solusi Konstruksi</span>
-        <h2 class="section-title display-6">Layanan Kami</h2>
-        <p class="text-muted small">Daftar layanan spesialis penanganan proyek konstruksi dan keteknikan.</p>
+      <div class="text-center mb-5">
+        <span class="section-badge">Kompetensi Inti</span>
+        <h2 class="section-title h1">Layanan Kami</h2>
+        <p class="text-muted small">Solusi konstruksi terintegrasi dengan akurasi pengerjaan tinggi.</p>
       </div>
       <div class="row g-4" id="services-list"></div>
     </div>
@@ -213,28 +119,27 @@
 
   <section id="strengths">
     <div class="container">
-      <div class="text-center max-w-xl mx-auto mb-5">
-        <span class="section-badge">Kelebihan</span>
-        <h2 class="section-title display-6">Mengapa Memilih Kami?</h2>
-        <p class="text-muted small">Nilai tambah dan komitmen kualitas kerja yang kami tawarkan untuk Anda.</p>
+      <div class="text-center mb-5">
+        <span class="section-badge">Keunggulan Utama</span>
+        <h2 class="section-title h1">Mengapa Memilih Kami?</h2>
+        <p class="text-muted small">Alasan mengapa kami dipercaya menangani berbagai proyek strategis.</p>
       </div>
       <div class="row text-center g-4" id="strengths-list"></div>
     </div>
   </section>
 
-  <section id="clients" class="bg-light" style="background-color: var(--bg-light) !important;">
+  <section id="clients" class="bg-surface">
     <div class="container">
-      <div class="text-center max-w-xl mx-auto mb-5">
-        <span class="section-badge">Kepercayaan Klien</span>
-        <h2 class="section-title display-6">Klien & Pengalaman</h2>
-        <p class="text-muted small">Mitra strategis dan daftar portofolio perusahaan yang pernah bekerja sama dengan kami.</p>
+      <div class="text-center mb-5">
+        <span class="section-badge">Aliansi Strategis</span>
+        <h2 class="section-title h1">Klien & Pengalaman</h2>
       </div>
       
       <div class="row justify-content-center align-items-center g-4 mb-5" id="clients-list"></div>
 
       <div class="row justify-content-center">
-        <div class="col-md-9 col-lg-8">
-          <div class="card border-0 shadow-sm rounded-3 p-4">
+        <div class="col-lg-8">
+          <div class="card border-0 shadow-sm rounded-3 p-3 p-md-4">
             <ul class="list-group list-group-flush text-center" id="experience-list"></ul>
           </div>
         </div>
@@ -244,34 +149,33 @@
 
   <section id="projects">
     <div class="container">
-      <div class="text-center max-w-xl mx-auto mb-5">
-        <span class="section-badge">Karya Nyata</span>
-        <h2 class="section-title display-6">Galeri Proyek</h2>
-        <p class="text-muted small">Dokumentasi hasil eksekusi pengerjaan konstruksi di lapangan.</p>
+      <div class="text-center mb-5">
+        <span class="section-badge">Portofolio Pekerjaan</span>
+        <h2 class="section-title h1">Galeri Proyek</h2>
       </div>
       <div class="row g-4" id="projects-list"></div>
     </div>
   </section>
 
-  <section class="py-5 text-center text-white" style="background-color: var(--primary-slate); padding: 80px 0 !important;">
-    <div class="container">
-      <h2 class="fw-bold mb-3">Siap Bermitra Dengan Kami?</h2>
-      <p class="text-white-50 mb-4 mx-auto" style="max-width: 500px; font-weight: 300;">Dapatkan konsultasi teknis, estimasi pembiayaan, dan solusi manajemen bangunan yang efisien sekarang.</p>
-      <a href="#contact" class="btn btn-lux btn-lg">Konsultasi Sekarang (Gratis)</a>
+  <section class="text-center text-white bg-slate-heavy" style="padding: 70px 0;">
+    <div class="container py-3">
+      <h2 class="fw-bold mb-3 h1">Siap Eksekusi Proyek Anda?</h2>
+      <p class="text-white-50 mb-4 mx-auto small" style="max-width: 540px; font-weight: 300;">Komunikasikan kebutuhan material, desain arsitektur, dan rencana anggaran bangunan Anda bersama tim kami.</p>
+      <a href="#contact" class="btn btn-custom btn-lg">Hubungi Engineer Kami</a>
     </div>
   </section>
 
-  <section id="contact" class="bg-light" style="background-color: var(--bg-light) !important;">
+  <section id="contact" class="bg-surface">
     <div class="container">
-      <div class="text-center max-w-xl mx-auto mb-5">
-        <span class="section-badge">Korespondensi</span>
-        <h2 class="section-title display-6">Kontak Kami</h2>
+      <div class="text-center mb-5">
+        <span class="section-badge">Pusat Informasi</span>
+        <h2 class="section-title h1">Kontak Kami</h2>
       </div>
       <div class="row justify-content-center">
         <div class="col-md-8 col-lg-6">
           <div class="card border-0 shadow-sm p-4 text-center rounded-3">
-            <p id="contact-address" class="mb-3 text-secondary small"></p>
-            <p id="contact-phone" class="mb-3 text-secondary small"></p>
+            <p id="contact-address" class="mb-3 text-secondary small lh-base"></p>
+            <p id="contact-phone" class="mb-3 text-secondary small fw-medium"></p>
             <p id="contact-email" class="mb-0 text-secondary small"></p>
           </div>
         </div>
@@ -279,10 +183,10 @@
     </div>
   </section>
 
-  <footer class="py-4 text-white text-center" style="background-color: #090d16; border-top: 1px solid rgba(255,255,255,0.04);">
+  <footer class="py-4 text-white text-center bg-footer">
     <div class="container">
       <small class="text-white-50 d-block mb-1">© 2026 <strong>PT. Wadah Karya Persada</strong>. All rights reserved.</small>
-      <small style="font-size: 11px;" class="text-muted">Hero image by Taro Ohtani on Unsplash.</small>
+      <small style="font-size: 10px;" class="text-muted">Hero background by Taro Ohtani via Unsplash.</small>
     </div>
   </footer>
 

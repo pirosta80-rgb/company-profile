@@ -1,91 +1,135 @@
 :root {
-  --primary: #1f2937;
-  --accent: #f59e0b;
+  --slate-heavy: #0f172a;  
+  --slate-light: #1e293b;  
+  --amber-heavy: #d97706;  
+  --amber-glow: rgba(217, 119, 6, 0.15);
+  --surface-grey: #f8fafc; 
 }
-
-/* WhatsApp Floating Button */
-#wa-float {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 9999;
-}
-
-#wa-float img {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  box-shadow: 0 8px 20px rgba(0,0,0,.3);
-  transition: .3s ease;
-}
-
-#wa-float img:hover {
-  transform: scale(1.1);
-}
-
-/* Email Floating Button */
-#email-float {
-  position: fixed;
-  right: 20px;
-  bottom: 80px;
-  z-index: 9999;
-}
-
-#email-float img {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  box-shadow: 0 8px 20px rgba(0,0,0,.3);
-  transition: .3s ease;
-}
-
-#email-float img:hover {
-  transform: scale(1.1);
-}
-
-/* BODY */
 
 body {
-   padding-top: 70px;
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  line-height: 1.7;
-  color: #1f2937;
+  font-family: 'Inter', sans-serif;
+  color: #334155;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  padding-top: 75px;
 }
 
-/* SECTION */
+h1, h2, h3, h4, h5, .navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+/* --- Responsive Layout Utilities --- */
 section {
+  padding: 80px 0;
   scroll-margin-top: 80px;
 }
+@media (max-width: 768px) {
+  section { padding: 60px 0; }
+}
 
-/* HERO */
-.hero-section {
-  /* Lambang Perusahaan di tengah */
+.bg-surface {
+  background-color: var(--surface-grey) !important;
+}
+.bg-slate-heavy {
+  background-color: var(--slate-heavy) !important;
+}
+.bg-footer {
+  background-color: #090d16 !important;
+  border-top: 1px solid rgba(255,255,255,0.03);
+}
 
+.section-badge {
+  display: inline-block;
+  color: var(--amber-heavy);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  color: var(--slate-heavy);
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+/* --- Premium Buttons --- */
+.btn-custom {
+  background-color: var(--amber-heavy);
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 28px;
+  border-radius: 4px;
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn-custom:hover {
+  background-color: #b45309;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(217, 119, 6, 0.25);
+}
+
+/* --- Mobile-Friendly Floating Actions --- */
+.floating-actions {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1050;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  gap: 12px;
+}
+.action-item {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.action-item:hover {
+  transform: scale(1.1) translateY(-4px);
+}
+.action-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
 
+/* --- Clean Navigation Bar --- */
+.navbar {
+  background-color: rgba(15, 23, 42, 0.96) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 15px 0;
+  transition: all 0.3s ease;
+}
+.nav-link {
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  margin: 0 6px;
+  transition: color 0.2s ease;
+}
+.nav-link:hover, .nav-link.active {
+  color: var(--amber-heavy) !important;
+}
+
+/* --- Dynamic Hero Area --- */
+.hero-box {
+  background: linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.6)), 
+              url('../images/hero/hero-2.webp') no-repeat center center/cover;
   min-height: 100vh;
-  background:
-    linear-gradient(rgba(75, 74, 74, 0.6), rgba(51, 49, 49, 0.6)),
-    url('../images/hero/hero-2.webp') center/cover no-repeat;
+  display: flex;
+  align-items: center;
 }
-
-.hero-section h1 {
-  letter-spacing: -0.5px;
-}
-
-.hero-section h1,
-.hero-section p {
-  color: #ffffff;
-}
-
-
-/* Hero Logo Animation */
-.hero-section img {
-  animation: fadeInDown .8s ease;
+.hero-logo-animate {
+  animation: fadeInDown 0.8s ease both;
 }
 
 @keyframes fadeInDown {
@@ -99,69 +143,55 @@ section {
   }
 }
 
-
-
-/* BUTTON */
-.btn-warning {
-  background-color: #f59e0b;
-  border: none;
-}
-
-.btn-warning:hover {
-  background-color: #d97706;
-}
-
-/* CARD */
+/* --- Card Custom System --- */
 .card {
   border: none;
-  border-radius: 12px;
-  transition: .3s ease;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
-
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 30px rgba(0,0,0,.08);
+  box-shadow: 0 15px 30px rgba(15, 23, 42, 0.08) !important;
 }
 
-
-/* CLIENT LOGOS */
-.client-logo {
-  max-width: 150px;
-  max-height: 90px;
+/* --- Interactive Client Logos --- */
+.client-logo-container img {
+  max-width: 140px;
+  max-height: 65px;
   width: 100%;
   object-fit: contain;
-
   filter: grayscale(100%);
-  opacity: 0.8;
-  transition: .3s ease;
+  opacity: 0.7;
+  transition: all 0.3s ease;
 }
-
-.client-logo:hover {
-  filter: grayscale(0%);
-  opacity: 1;
+.client-logo-container img:hover {
+  filter: grayscale(0%) !important;
+  opacity: 1 !important;
   transform: scale(1.05);
 }
 
-
-/* PROJECT IMAGE */
-.project-img {
-  height: 220px;
-  object-fit: cover;
-  border-radius: 12px;
+/* Custom Border untuk baris statistik */
+.border-white-10 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
 }
 
-/* FOOTER */
-footer {
-  font-size: 14px;
+/* Tulisan Extra Bold untuk Judul Utama */
+.fw-extrabold {
+  font-weight: 800 !important;
 }
 
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all .8s ease;
+/* Animasi Floating Halus untuk Logo di Kanan */
+.animate-floating {
+  animation: floatAnim 4s ease-in-out infinite;
 }
 
-.fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
+@keyframes floatAnim {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Perbaikan alignment pada posisi Hero di monitor besar */
+.hero-box {
+  text-align: left !important; /* Mengubah default center kita sebelumnya */
 }

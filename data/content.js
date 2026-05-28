@@ -2,120 +2,121 @@ const companyData = {
   company: {
     name: "PT. Wadah Karya Persada",
     tagline: "Kontraktor Sipil Profesional & Terpercaya",
-    description: `PT Wadah Karya Persada merupakan perusahaan kontraktor yang bergerak di bidang pekerjaan sipil dan mekanikal, dengan komitmen untuk memberikan hasil pekerjaan yang berkualitas, aman, dan tepat waktu. Kami didukung oleh tenaga profesional yang berpengalaman serta sistem manajemen proyek yang terstruktur dalam setiap pelaksanaan pekerjaan.
-                  Melalui penerapan standar teknis dan keselamatan kerja yang baik, PT Wadah Karya Persada senantiasa berupaya menjadi mitra terpercaya bagi klien dalam mewujudkan proyek konstruksi yang andal dan berkelanjutan.`,
-    address: "Alamat: Perumahan Permata Wisata Blok C3 No.9, Cimuning, Mustikajaya, Bekasi",
-    phone: "HP/WA: 0813-9929-4422",
-    email: "Email: wadahkaryapersada.pt@yahoo.com",
+    description: `PT Wadah Karya Persada merupakan perusahaan kontraktor yang bergerak di bidang pekerjaan sipil dan mekanikal, dengan komitmen untuk memberikan hasil pekerjaan yang berkualitas, aman, dan tepat waktu. Kami didukung oleh tenaga profesional yang berpengalaman serta sistem manajemen proyek yang terstruktur dalam setiap pelaksanaan pekerjaan. Melalui penerapan standar teknis dan keselamatan kerja yang baik, PT Wadah Karya Persada senantiasa berupaya menjadi mitra terpercaya bagi klien dalam mewujudkan proyek konstruksi yang andal dan berkelanjutan.`,
+    address: "Perumahan Permata Wisata Blok C3 No.9, Cimuning, Mustikajaya, Bekasi",
+    phone: "0813-9929-4422",
+    email: "wadahkaryapersada.pt@yahoo.com",
     whatsapp: "6281399294422",
   },
 
   services: [
     {
       title: "Mechanical & Piping",
-      desc: "Pekerjaan mekanikal dan pipa sesuai standar teknis.",
+      desc: "Pekerjaan mekanikal dan instalasi pipa baja, stainless steel, & PVC berstandar teknis tinggi.",
+      icon: "fa-gears"
     },
     {
-      title: "Design, Perencanaan, Konsultasi & RAB",
-      desc: "Design dan perencanaan proyek konstruksi secara menyeluruh.",
+      title: "Design, Perencanaan & RAB",
+      desc: "Pembuatan blueprint arsitektur, perhitungan struktur, estimasi anggaran proyek (RAB) komprehensif.",
+      icon: "fa-compass-drafting"
     },
     {
       title: "Gedung & Bangunan",
-      desc: "Pembangunan gedung perkantoran dan fasilitas umum.",
+      desc: "Konstruksi gedung perkantoran, ruko, pabrik, serta fasilitas industrial skala kecil hingga menengah.",
+      icon: "fa-building"
     },
     {
       title: "Renovasi & Perawatan",
-      desc: "Perawatan dan rehabilitasi bangunan.",
-    },
-    // {
-    //   title: "Jalan Raya & Infrastruktur",
-    //   desc: "Pekerjaan jalan aspal dan beton sesuai standar teknis.",
-    // },
+      desc: "Layanan rekonstruksi, retrofit struktural, pengecatan massal, serta overhaul pemeliharaan bangunan.",
+      icon: "fa-trowel-bricks"
+    }
   ],
 
   strengths: [
     {
       title: "Berpengalaman",
-      desc: "Menangani berbagai proyek infrastruktur.",
+      desc: "Rekam jejak panjang dalam menangani beragam klaster proyek infrastruktur.",
+      icon: "fa-briefcase"
     },
     {
       title: "Tepat Waktu",
-      desc: "Komitmen terhadap jadwal pekerjaan.",
+      desc: "Disiplin tinggi terhadap jadwal kurva-S pelaksanaan proyek di lapangan.",
+      icon: "fa-clock"
     },
     {
       title: "Profesional",
-      desc: "Didukung tenaga ahli dan manajemen rapi.",
+      desc: "Manajemen lapangan yang rapi dipandu oleh engineer ahli bersertifikat.",
+      icon: "fa-user-tie"
     },
     {
       title: "Berkualitas",
-      desc: "Sesuai standar dan spesifikasi teknis.",
-    },
+      desc: "Kepatuhan mutlak pada spesifikasi material konstruksi kesepakatan kontrak.",
+      icon: "fa-award"
+    }
   ],
 
-clients: [
-{
-  name: "Pt. Poliplant sejahtera (Cargill grup) Kec. Air upas, Kalbar",
-  logo: "assets/images/client/cargill.webp",
-},
-  {
-    name: "Mall Sumarecon Serpong",
-    logo: "assets/images/client/sumarecon-serpong.webp",
-  },
-  {
-    name: "Mall Sumarecon Kelapagading",
-    logo: "assets/images/client/sumarecon-gading.webp",
-  },
-  {
-    name: "Sekolah Islam Al-Azhar Sumarecon Bekasi",
-    logo: "assets/images/client/al-azhar-bekasi.webp",
-  },
-],
+  clients: [
+    {
+      name: "PT. Poliplant Sejahtera (Cargill Group)",
+      logo: "assets/images/client/cargill.webp"
+    },
+    {
+      name: "Mall Summarecon Serpong",
+      logo: "assets/images/client/sumarecon-serpong.webp"
+    },
+    {
+      name: "Mall Summarecon Kelapa Gading",
+      logo: "assets/images/client/sumarecon-gading.webp"
+    },
+    {
+      name: "Sekolah Islam Al-Azhar Summarecon Bekasi",
+      logo: "assets/images/client/al-azhar-bekasi.webp"
+    }
+  ],
 
-experience: [
-  "50+ Proyek rumah tinggal & renovasi",
-  "Pekerjaan sipil & mekanikal",
-  "Klien perorangan dan institusi",
-  "Pengerjaan sesuai kebutuhan klien",
-],
-
-
+  experience: [
+    "Eksekusi 50+ Proyek Pembangunan Rumah Tinggal & Renovasi Komersial",
+    "Spesialis Kontrak Pekerjaan Sipil Struktur & Mekanikal Fluida Industri",
+    "Kemitraan Terpercaya Bersama Entitas Korporasi Nasional Maupun Sektor Perorangan",
+    "Skalabilitas Pengerjaan Fleksibel Sesuai Kebutuhan Anggaran Klien"
+  ],
 
   projects: [
     {
       title: "Pembangunan Gedung Steril (Steril Room)",
       location: "Marunda",
-      year: "",
-      image: "assets/images/projects/farmasi.webp",
+      year: "Selesai",
+      image: "assets/images/projects/farmasi.webp"
     },
     {
       title: "Perbaikan Rumah / Renovasi",
       location: "Bekasi",
-      year: "",
-      image: "assets/images/projects/renovrumah.webp",
+      year: "Selesai",
+      image: "assets/images/projects/renovrumah.webp"
     },
     {
       title: "Pekerjaan Mekanikal / Piping",
       location: "Kalsel",
-      year: "",
-      image: "assets/images/projects/piping.webp",
+      year: "Selesai",
+      image: "assets/images/projects/piping.webp"
     },
     {
       title: "Pembangunan Warehouse",
       location: "Serang",
-      year: "",
-      image: "assets/images/projects/warehouse.webp",
+      year: "Selesai",
+      image: "assets/images/projects/warehouse.webp"
     },
     {
       title: "Pembangunan/Renovasi Gedung Sekolah",
       location: "Bekasi",
-      year: "",
-      image: "assets/images/projects/sd-al-azhar.webp",
+      year: "Selesai",
+      image: "assets/images/projects/sd-al-azhar.webp"
     },
     {
       title: "Pembangunan Rumah Baru",
       location: "Bekasi",
-      year: "",
-      image: "assets/images/projects/rumahbaru.webp",
-    },
-  ],
+      year: "Selesai",
+      image: "assets/images/projects/rumahbaru.webp"
+    }
+  ]
 };
